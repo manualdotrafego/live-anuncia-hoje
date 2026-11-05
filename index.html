@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Live Anuncia Hoje, Venda Hoje | 24 de novembro · Mercado Livre</title>
-  <meta name="description" content="Live ao vivo com Emerson Faccioli, Consultor Platinum do Mercado Livre, dia 24 de novembro. Como criar um anúncio que vende no mesmo dia. Ingresso R$ 47.">
+  <meta name="description" content="Live ao vivo com Emerson Faccioli, Consultor Platinum do Mercado Livre, dia 24 de novembro, às 19h. Como criar um anúncio que vende no mesmo dia. Ingresso R$ 47.">
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#05060f">
   <link rel="icon" type="image/png" href="img/favicon.png">
@@ -128,6 +128,18 @@
     .secao__cab p{font-size:1.02rem;line-height:1.65}
     .fio{height:1px;border:0;background:var(--grad);opacity:.5}
 
+    /* A objeção do anúncio, respondida pelo Emerson */
+    .objecao .wrap{display:grid;gap:26px}
+    .objecao blockquote{position:relative;padding:28px 24px 26px 26px;border:1px solid var(--line);border-radius:20px;background:var(--surface);overflow:hidden}
+    .objecao blockquote::before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:linear-gradient(180deg,#2a3bff 0%,#a52ae0 32%,#ff2d78 58%,#ff7a1a 82%,#ffc700 100%)}
+    .objecao blockquote p{font-family:var(--font-display);font-weight:800;font-size:clamp(1.15rem,1.6vw + .8rem,1.7rem);line-height:1.25;letter-spacing:-.015em;color:#fff;text-wrap:pretty}
+    .objecao blockquote p b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .objecao cite{display:block;margin-top:16px;font-style:normal;font-size:.86rem;color:var(--muted)}
+    .objecao cite b{color:var(--txt-soft);font-weight:600}
+    .para-quem{list-style:none;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+    .para-quem li{font-family:var(--font-display);font-size:.74rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:9px 14px;border:1px solid var(--line-strong);border-radius:100px;background:var(--surface-2);color:#fff}
+    .para-quem li:first-child{border:0;background:none;padding-left:0;color:var(--muted);letter-spacing:.14em;font-size:.66rem}
+
     /* O escuro */
     .escuro .wrap{display:grid;gap:28px}
     .escuro__titulo{display:grid;gap:18px;justify-items:start}
@@ -208,6 +220,8 @@
       .provas{rotate:-1.2deg;translate:-28px 0}
       .secao{padding:96px 0}
       .escuro .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:56px;align-items:center}
+      .objecao .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:56px;align-items:center}
+      .objecao blockquote{padding:36px 34px 32px 38px}
       .mural{columns:3}
       .barra{display:none}
       footer{padding-bottom:40px}
@@ -231,7 +245,7 @@
     <section class="hero">
       <div class="wrap">
         <div class="hero__texto">
-          <p class="selo"><i class="pisca" aria-hidden="true"></i>Live ao vivo · 24 de novembro</p>
+          <p class="selo"><i class="pisca" aria-hidden="true"></i>Live ao vivo · 24 de novembro · 19h</p>
           <h1>Como criar um anúncio no Mercado Livre que <em>vende no mesmo dia.</em></h1>
           <p class="lead soft">Live ao vivo com <b>Emerson Faccioli</b>, Consultor Platinum do Mercado Livre. Ingresso por <b>R$ 47</b>.</p>
           <div class="hero__cta">
@@ -246,10 +260,10 @@
         </div>
 
         <div class="hero__lado">
-          <div class="ingresso" aria-label="Ingresso da live: 24 de novembro, terça-feira, online e ao vivo, R$ 47">
+          <div class="ingresso" aria-label="Ingresso da live: 24 de novembro, terça-feira, 19h, online e ao vivo, R$ 47">
             <div class="ingresso__cima">
               <p class="ingresso__rot"><span>Ingresso · live única</span><span>Ao vivo</span></p>
-              <p class="ingresso__data">24 nov<small>Terça-feira · online e ao vivo</small></p>
+              <p class="ingresso__data">24 nov<small>Terça-feira, 19h · online e ao vivo</small></p>
             </div>
             <div class="ingresso__corte" aria-hidden="true"></div>
             <div class="ingresso__baixo">
@@ -267,6 +281,25 @@
     </section>
 
     <hr class="fio">
+
+    <section class="secao objecao" style="padding-bottom:0">
+      <div class="wrap">
+        <div style="display:grid;gap:18px;justify-items:start">
+          <p class="rotulo">Anuncia hoje, vende hoje mesmo</p>
+          <h2>Você deve estar pensando: isso não é possível.</h2>
+          <ul class="para-quem" aria-label="Para quem é">
+            <li>Serve para vendedor</li>
+            <li>Com medalha</li>
+            <li>Sem medalha</li>
+            <li>Iniciante</li>
+          </ul>
+        </div>
+        <blockquote>
+          <p>“Eu mostro na prática como eu fiz uma conta sair do <b>absoluto zero</b> e faturar <b>mais de R$ 100 mil</b> somente com três produtos e três anúncios em 40 dias.”</p>
+          <cite><b>Emerson Faccioli</b>, no vídeo de convite da live</cite>
+        </blockquote>
+      </div>
+    </section>
 
     <section class="secao escuro">
       <div class="wrap">
@@ -340,13 +373,13 @@
     <section class="secao oferta" id="ingresso">
       <div class="wrap">
         <div style="display:grid;gap:14px;justify-items:center">
-          <p class="rotulo">Live única · online e ao vivo</p>
+          <p class="rotulo">Live única · 24 de novembro, 19h · com replay</p>
           <h2>Garanta o seu ingresso.</h2>
         </div>
-        <div class="ingresso" style="rotate:none" aria-label="Ingresso da live: 24 de novembro, terça-feira, online e ao vivo, R$ 47">
+        <div class="ingresso" style="rotate:none" aria-label="Ingresso da live: 24 de novembro, terça-feira, 19h, online e ao vivo, R$ 47">
           <div class="ingresso__cima" style="text-align:left">
             <p class="ingresso__rot"><span>Ingresso · live única</span><span>Ao vivo</span></p>
-            <p class="ingresso__data">24 nov<small>Terça-feira · online e ao vivo</small></p>
+            <p class="ingresso__data">24 nov<small>Terça-feira, 19h · online e ao vivo</small></p>
           </div>
           <div class="ingresso__corte" aria-hidden="true"></div>
           <div class="ingresso__baixo" style="text-align:left">
@@ -367,10 +400,11 @@
         <div class="secao__cab"><p class="rotulo">Antes de comprar</p><h2>Perguntas rápidas.</h2></div>
         <div class="faq">
           <details><summary>Preciso investir em anúncio patrocinado?</summary><p>Não. O método foi feito para vender sem depender de anúncio patrocinado, de produto milagroso ou de estoque gigante.</p></details>
-          <details><summary>Serve para quem está começando?</summary><p>Sim. Os prints são de iniciantes e de lojas que já vendem, incluindo quem fez a primeira venda de uma conta parada.</p></details>
+          <details><summary>Serve para quem está começando?</summary><p>Sim. Segundo o Emerson, a técnica é aplicada por vendedores com medalha, sem medalha e iniciantes. Os prints incluem quem fez a primeira venda de uma conta parada.</p></details>
           <details><summary>Quem conduz a live?</summary><p>Emerson Faccioli, Consultor Platinum do Mercado Livre. O método é o que o time dele usa em mais de 500 contas.</p></details>
           <details><summary>Quanto custa e como pago?</summary><p>O ingresso custa R$ 47, em pagamento único processado com segurança pela Hotmart. Leva menos de um minuto.</p></details>
-          <details><summary>Quando é?</summary><p>Dia 24 de novembro, terça-feira, online e ao vivo. É uma live única.</p></details>
+          <details><summary>Quando é?</summary><p>Dia 24 de novembro, terça-feira, às 19h, online e ao vivo. É uma live única.</p></details>
+          <details><summary>E se eu não puder assistir ao vivo?</summary><p>A live terá replay.</p></details>
         </div>
       </div>
     </section>
@@ -384,7 +418,7 @@
   </footer>
 
   <div class="barra" id="barra">
-    <p>24 nov · ao vivo<b>R$ 47</b></p>
+    <p>24 nov · 19h · ao vivo<b>R$ 47</b></p>
     <a class="btn" data-comprar href="https://pay.hotmart.com/V108325146E?off=j6rz61vx">Quero meu ingresso</a>
   </div>
 
